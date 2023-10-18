@@ -1,6 +1,7 @@
 
 function setup(){
     createCanvas(500,400);
+    somTrilha.loop();
 }
 
 function draw(){
@@ -8,6 +9,8 @@ function draw(){
     mostraCarro();
     image(imagemGalinha,posxGalinha,posyGalinha,30,30); //x/y//largura//altura
     movimentaCarro();
-
     moveAtor();
+    bateu();
+    mostraPontos();
+    vitoria();
 }
